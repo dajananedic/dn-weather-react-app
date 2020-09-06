@@ -43,37 +43,37 @@ export default function Search() {
     </div>
   );
 
-  return (
-    <div>
-      {form}
-      <ul>
-        <li>Temperature: {weather.temperature}°C </li>
-        <li>Wind: {weather.wind} km/h</li>
-        <li>Humidity: {weather.humidity}%</li>
-        <li>Description: {weather.description}</li>
-        <li>
-          <img src={weather.icon} alt="Weather icon" />{" "}
-        </li>
-      </ul>
-    </div>
-  );
+  //   return (
+  //     <div>
+  //       {form}
+  //       <ul>
+  //         <li>Temperature: {weather.temperature}°C </li>
+  //         <li>Wind: {weather.wind} km/h</li>
+  //         <li>Humidity: {weather.humidity}%</li>
+  //         <li>Description: {weather.description}</li>
+  //         <li>
+  //           <img src={weather.icon} alt="Weather icon" />{" "}
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   );
 
-  //   if (loaded) {
-  //     return (
-  //       <div>
-  //         {form}
-  //         <ul>
-  //           <li>Temperature: {weather.temperature}°C</li>
-  //           <li>Wind: {weather.wind} km/h</li>
-  //           <li>Humidity: {weather.humidity}%</li>
-  //           <li>Description: {weather.description}</li>
-  //           <li>
-  //             <img src={weather.icon} alt="weather icon" />{" "}
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     );
-  //   } else {
-  //     return form;
-  //   }
+  if (loaded) {
+    return (
+      <div>
+        {form}
+        <ul>
+          <li>Temperature: {weather.temperature}°C</li>
+          <li>Wind: {weather.wind} km/h</li>
+          <li>Humidity: {weather.humidity}%</li>
+          <li>Description: {weather.description}</li>
+          <li>
+            <img src={weather.icon} alt="weather icon" />{" "}
+          </li>
+        </ul>
+      </div>
+    );
+  } else {
+    return form;
+  }
 }
