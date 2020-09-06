@@ -14,18 +14,30 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
+  font-family: "Roboto";
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blue;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.input {
+  border: 2px solid blue;
+}
+
+.search {
+  background: blue;
+  color: white;
+  border: 2px solid blue;
+  margin-left: 25px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul li {
+  list-style-type: none;
+  text-align: left;
 }
