@@ -1,18 +1,21 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import Search from "./Search";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Dajana's Weather App</h1>
-
-        <Search />
-      </header>
+      <h1>Dajana's Weather App</h1>
+      <Search />
+      <footer>
+        This project was coded by Dajana Nedic{" "}
+        <a
+          href="https://github.com/dajananedic/dn-weather-react-app"
+          target="_blank"
+        >
+          open-sourced on Github
+        </a>
+      </footer>
     </div>
   );
 }
-
-export default App;
