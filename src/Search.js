@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Search.css";
 
 export default function Search() {
   const [city, setCity] = useState("");
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
   const [weather, setWeather] = useState({});
 
   function showWeather(response) {
@@ -29,7 +30,7 @@ export default function Search() {
   }
 
   let form = (
-    <div>
+    <div className="Form-container">
       <form onSubmit={submitCity}>
         <input
           className="input"
@@ -60,17 +61,21 @@ export default function Search() {
 
   if (loaded) {
     return (
-      <div>
+      <div className="des-container">
         {form}
-        <ul>
-          <li>Temperature: {weather.temperature}°C</li>
-          <li>Wind: {weather.wind} km/h</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Description: {weather.description}</li>
-          <li>
-            <img src={weather.icon} alt="weather icon" />{" "}
-          </li>
-        </ul>
+        <div className="row">
+          <div className="col col-3 offset-6">
+            <ul>
+              <li>Temperature: {weather.temperature}°C</li>
+              <li>Wind: {weather.wind} km/h</li>
+              <li>Humidity: {weather.humidity}%</li>
+              <li>Description: {weather.description}</li>
+              <li>
+                <img src={weather.icon} alt="weather icon" />{" "}
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   } else {
