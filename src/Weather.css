@@ -1,4 +1,24 @@
+h1 {
+  text-align: right;
+}
+
+ul {
+  text-align: left;
+  color: green;
+  padding-inline-start: 0px;
+}
+
 .Weather {
   color: blue;
   border: 1px solid blue;
+}
+
+.city-col {
+  border: 1px dotted magenta;
+  margin: 10px;
+}
+
+.des-col {
+  border: 1px dotted blueviolet;
+  margin: 10px;
 }
