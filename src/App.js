@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Search from "./Search";
 import Weather from "./Weather";
+import "./Weather.css";
 
 export default function App() {
   return (
