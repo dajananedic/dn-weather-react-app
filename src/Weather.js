@@ -33,16 +33,17 @@ export default function Weather(props) {
           <input className="search-city" type="submit" value="Search" />
         </form>
         <div className="row">
-          <div className="col col-6 city-col">
+          <div className="col-6 city-col">
             <h1>{weatherData.city}</h1>
             <br />
             <div className="clearfix">
               <img
                 src={weatherData.iconUrl}
                 alt={weatherData.description}
-                className="float-left"
+                className="float-right"
               />
-              <div className="float-left">
+
+              <div className="float-right">
                 <span className="temperature">
                   {Math.round(weatherData.temperature)}
                 </span>
@@ -51,7 +52,7 @@ export default function Weather(props) {
             </div>
           </div>
 
-          <div className="col col-3 des-col">
+          <div className="col-4 des-col">
             <ul>
               <li>{weatherData.date}</li>
               <li className="text-capitalize">{weatherData.description}</li>
