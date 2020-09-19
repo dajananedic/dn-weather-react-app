@@ -1,7 +1,23 @@
+ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
 .Form-container {
   background-color: green;
 }
 
 .des-container {
   background-color: greenyellow;
+}
+
+.input {
+  border: 2px solid blue;
+}
+
+.search {
+  background: blue;
+  color: white;
+  border: 2px solid blue;
+  margin-left: 25px;
 }
