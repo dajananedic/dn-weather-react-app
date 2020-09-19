@@ -6,11 +6,29 @@ export default function Weather() {
   return (
     <div className="Weather">
       <Search />
+      <form>
+        <input
+          className="input-city"
+          type="search"
+          placeholder="Enter a city"
+          autoFocus="on"
+        />
+        <input className="search-city" type="submit" value="Search" />
+      </form>
       <div className="row">
         <div className="col col-6 city-col">
           <h1>New York</h1>
           <br />
-          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />
+          <div className="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              className="float-left"
+            />
+            <div className="float-left">
+              <span className="temperature">6</span>
+              <span className="unit">°C</span>
+            </div>
+          </div>
         </div>
 
         <div className="col col-3 des-col">
