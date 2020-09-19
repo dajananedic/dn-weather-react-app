@@ -6,6 +6,7 @@
   text-align: center;
   font-family: "Roboto Mono";
   color: blue;
+  margin: 25px;
 }
 
 .App-header {
@@ -22,4 +23,9 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App footer {
+  font-size: 10px;
+  margin: 20px 10px;
 }
