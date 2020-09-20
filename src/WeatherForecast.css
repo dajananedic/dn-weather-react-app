@@ -7,3 +7,11 @@
   display: block;
   margin: 10px auto;
 }
+
+.WeatherForecastPreview .hours {
+  font-weight: bold;
+}
+
+.WeatherForecastPreview {
+  margin-top: 50px;
+}

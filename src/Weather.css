@@ -1,6 +1,6 @@
 .Weather {
   color: blue;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .Weather h1 {
@@ -9,13 +9,14 @@
 
 .Weather ul {
   text-align: left;
-  color: green;
+  color: blue;
   padding-inline-start: 0px;
+  margin-top: 120px;
 }
 
 .Weather form {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 .input-city {
@@ -30,13 +31,14 @@
 }
 
 .city-col {
-  border: 1px dotted magenta;
+  /* border: 1px dotted magenta; */
   margin: 10px;
+  margin-top: 50px;
   display: block;
 }
 
 .des-col {
-  border: 1px dotted blueviolet;
+  /* border: 1px dotted blueviolet; */
   margin: 10px;
 }
 .WeatherInfo .temp-icon {
