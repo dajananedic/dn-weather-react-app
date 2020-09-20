@@ -11,12 +11,14 @@ export default function App() {
 
         <footer>
           This project was coded by Dajana Nedic{" "}
-          <a
-            href="https://github.com/dajananedic/dn-weather-react-app"
-            target="_blank"
-          >
-            open-sourced on Github
-          </a>
+          <span>
+            <a
+              href="https://github.com/dajananedic/dn-weather-react-app"
+              target="_blank"
+            >
+              open-sourced on Github
+            </a>
+          </span>
         </footer>
       </div>
     </div>
