@@ -40,8 +40,8 @@ form {
 }
 
 .Weather img {
-  /* margin-left: 200px;
-  margin-right: 10px; */
+  margin-left: 200px;
+  margin-right: 10px;
 }
 
 .Weather .temperature {
