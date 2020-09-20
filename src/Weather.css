@@ -39,17 +39,17 @@ form {
   margin: 10px;
 }
 
-.Weather img {
+.Weather canvas {
   margin-left: 200px;
   margin-right: 10px;
 }
 
-.Weather .temperature {
+.WeatherInfo .temperature {
   font-size: 60px;
   line-height: 60px;
 }
 
-.Weather .unit {
+.WeatherInfo .unit {
   font-size: 20px;
   position: relative;
   line-height: 1;
