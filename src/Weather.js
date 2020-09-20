@@ -3,12 +3,13 @@ import axios from "axios";
 import "./Weather.css";
 import Search from "./Search";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response.data);
+    // console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -39,7 +40,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <Search />
+        {/* <Search /> */}
         <form onSubmit={handleSubmit}>
           <input
             className="input-city"
@@ -51,6 +52,7 @@ export default function Weather(props) {
           <input className="search-city" type="submit" value="Search" />
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast city={weatherData.city} />
       </div>
     );
   } else {
